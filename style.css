@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+header ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li{
+    vertical-align: middle;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    position: relative;
+    height: calc(100vh - 72.67px);
+    position: relative;
+}
+
+section{
+    border-radius: 8px;
+    width: 60%;
+    height: 90%;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #d9d9d9;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .6);
+    padding: 25px;
+}
+
+section #addTask{
+    margin-bottom: 20px;
+}
+
+section input[type='text']{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+}
+
+section input[type='submit']{
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+section #taskContainer{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+section #task{
+    display: flex;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+section #task input[type='text']{
+    outline: none;
+    width: 80%;
+}
+
+section #edit,
+section #dlt{
+    padding: 0 10px;
+    cursor: pointer;
+}
